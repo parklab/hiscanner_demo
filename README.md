@@ -1,4 +1,4 @@
-# Running HiScanner with Demo Data
+## Running HiScanner with Demo Data
 
 <details>
 <summary>1. Download and Extract Demo Data</summary>
@@ -8,7 +8,7 @@
 # Go to https://figshare.com/s/c5aeb5bc039a2990fc89
 # Click "Download all (468.29Mb)"
 
-# Extract downloaded files
+# Extrac the downloaded files
 unzip 28369088.zip
 tar -xvf scan2_out.tar.gz
 
@@ -25,9 +25,10 @@ rm 28369088.zip scan2_out.tar.gz
 conda activate hiscanner_test
 
 # Initialize (choose one)
-hiscanner init
-# OR
-cp resource/config.yaml .
+hiscanner init # then edit config.yaml
+# OR use the provided config.yaml
+cp resources/config.yaml .
+# remember to edit the config.yaml file to set the correct paths
 ```
 </details>
 
@@ -158,3 +159,16 @@ Expected output:
 INFO     ✓ Removed directories: cfg, segcfg, readpos, temp
 ```
 </details>
+
+### Now you can explore the results in the `hiscanner_out` directory!
+
+You can compare the genome tracks in `final_calls` with `resources/hiscanner_out_expected/final_calls/*png`. They should be identical. There are two diploid cells and one cell with chr2 loss and chr16 gain. 
+
+
+
+
+![Lymphocyte-068](resources/hiscanner_out_expected/final_calls/SRR6204923_Lymphocyte-068_track.png)
+![Lymphocyte-015](resources/hiscanner_out_expected/final_calls/SRR6204878_Lymphocyte-015_track.png)
+![Lymphocyte-066](resources/hiscanner_out_expected/final_calls/SRR6204925_Lymphocyte-066_track.png)
+
+*Important Note*: The BAF signals are _not_ derived from real mouse scWGS data but rather simulated. As this mouse strain is _not_ cross-bred, there are almost no heteterozygous SNPs. The purpose of this demo is for users to check installation and explore the pipeline's functionality, not to demonstrate real biological results.

@@ -1,5 +1,5 @@
 scan2_output: /home/yzhao/demo/scan2_out/
-metadata_path: /home/yzhao/demo/metadata.txt
+metadata_path: /home/yzhao/demo/resources/metadata.txt
 outdir: ./hiscanner_out
 
 fasta_folder: '/home/yzhao/demo/fastq_split/'
