@@ -1,0 +1,5 @@
+bam	bamID	singlecell
+/path/to/bulk/omit/for/demo	BULK_MOUSE	N
+/home/yzhao/demo/bams/SRR6204923_sra.bam	SRR6204923_Lymphocyte-068	Y
+/home/yzhao/demo/bams/SRR6204878_sra.bam	SRR6204878_Lymphocyte-015	Y
+/home/yzhao/demo/bams/SRR6204925_sra.bam	SRR6204925_Lymphocyte-066	Y
