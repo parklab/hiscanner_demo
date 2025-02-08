@@ -1,19 +1,32 @@
 ## Running HiScanner with Demo Data
+Download this repository by 
+```bash
+git clone https://github.com/parklab/hiscanner_demo.git
+cd hiscanner_demo
+```
 
 <details>
 <summary>1. Download and Extract Demo Data</summary>
 
 ```bash
 # Download from Figshare
-# Go to https://figshare.com/s/c5aeb5bc039a2990fc89
-# Click "Download all (468.29Mb)"
+wget https://figshare.com/ndownloader/articles/28369088?private_link=c5aeb5bc039a2990fc89
+mv '28369088?private_link=c5aeb5bc039a2990fc89' demo_data.zip
 
-# Extrac the downloaded files
-unzip 28369088.zip
-tar -xvf scan2_out.tar.gz
+wget https://figshare.com/ndownloader/articles/28375844?private_link=854df579f68882779a06
+mv '28375844?private_link=854df579f68882779a06' fasta_split.zip
+```
 
-# Clean up
-rm 28369088.zip scan2_out.tar.gz
+# Extract the downloaded files using unzip 
+```bash
+# Extract all files
+unzip demo_data.zip && tar -xvf scan2_out.tar.gz
+unzip fasta_split.zip
+rm demo_data.zip scan2_out.tar.gz fasta_split.zip
+cd fasta_split && for tarfile in *.tar.gz; do
+    tar -xzvf "$tarfile"
+done
+cd ..
 ```
 </details>
 

@@ -2,7 +2,7 @@ scan2_output: /home/yzhao/demo/scan2_out/
 metadata_path: /home/yzhao/demo/resources/metadata.txt
 outdir: ./hiscanner_out
 
-fasta_folder: '/home/yzhao/demo/fastq_split/'
+fasta_folder: '/home/yzhao/demo/fasta_split/'
 mappability_folder_stem: '/home/yzhao/demo/mappability/100mer.'
 
 use_multisample_segmentation: true
