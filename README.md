@@ -41,7 +41,8 @@ conda activate hiscanner_test
 hiscanner init # then edit config.yaml
 # OR use the provided config.yaml
 cp resources/config.yaml .
-# remember to edit the config.yaml file to set the correct paths
+# you will need to edit config.yaml and metadata.txt (in resources folder) and set the correct paths
+
 ```
 </details>
 
